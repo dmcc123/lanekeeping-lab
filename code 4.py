@@ -100,7 +100,7 @@ t_span = t_sampling * np.arange(num_points + 1)
 
 
 pidA  = PIDController (kp=0.05, ki=0.007, kd=0.12, ts=0.025)
-car_A = car(x=0, y=0.5, disturb=0.0174533, pose=0)
+car_A = car(x=0, y=0.3, disturb=0.0174533, pose=0)
 
 y_cacheA = np.array([car_A.y()]) # we inserted the correct (first) value of y
                                    # into the cache (y cache)
